@@ -19,7 +19,7 @@ export default defineConfig({
   retries: 2,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  grepInvert: /login/,
+  //grepInvert: /login/,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html', {open: "always", outputFolder:"playwright-report/HTML-Report"}],
   ["line"], ["allure-playwright"]],
